@@ -1,6 +1,8 @@
 import { Avatar } from "@/components/Avatar";
 import { Container } from "@/components/Container";
 import { TransitionPage } from "@/components/TransitionPage";
+import { CounterServices } from "@/components/CounterServices";
+import { TimeLine } from "@/components/TimeLine";
 
 export default function PageAboutMe() {
   return (
@@ -8,10 +10,14 @@ export default function PageAboutMe() {
       <TransitionPage />
       <Container>
         <Avatar />
-        <h1>
+        <h1 className="text-2xl leading-tight text-center md:text-left md:text-4xl md:mt-10">
           Toda mi
-          <span> trayectoria profesional</span>
+          <span className="font-bold text-secondary"> trayectoria profesional</span>
         </h1>
+
+        <CounterServices />
+
+        <TimeLine />
       </Container>
     </>
   );
